@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validation Demo</title>
+</head>
+
+<body>
+
+    <h1>Validation Demo</h1>
+    <hr>
+
+    <form action="/dummy">
+        <div>
+            <label for="first">Eneter First Name:</label>
+            <input type="text" name="first" id="first" required>
+            
+        </div>
+        <div>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" minlength="5" maxlength="20" required>
+        </div>
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div>
+            <label for="url">URl:</label>
+            <input type="url" name="url" id="url" required>
+        </div>
+        <button>Submit</button>
+    </form>
+
+</body>
+
+</html>
