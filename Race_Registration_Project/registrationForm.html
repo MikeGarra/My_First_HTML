@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form Project</title>
+</head>
+
+<body>
+    <h1>Racer Registration Form</h1>
+    <hr>
+    <form action="/demo">
+        <div>
+            <label for="first">First Name:</label>
+            <input type="text" id="first" name="first" required minlength="3" maxlength="20">
+        </div>
+        <div>
+            <label for="last">Last Name:</label>
+            <input type="text" id="last" name="last" required minlength="3" maxlength="20">
+        </div>
+
+        <p>
+        <div>
+            <label for="race_type">Select the race you want:</label>
+        </div>
+        <!-- The first race is selected so that at least one race has been chosen -->
+        <div>
+            <input type="radio" id="race1" name="race1" value="fun_run" checked>
+            <label for="race">Fun Run 5K</label>
+        </div>
+        <div>
+            <input type="radio" id="race2" name="race" value="half">
+            <label for="race">Half Marathon</label>
+        </div>
+        <div>
+            <input type="radio" id="race3" name="race" value="full">
+            <label for="race">Full Marathon</label>
+        </div>
+        </p>
+
+        <p>
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" required>
+        </div>
+        <div>
+            <label for="password">Pasword:</label>
+            <input type="password" id="password" name="password" required minlength="8" maxlength="25">
+        </div>
+        </p>
+
+        <p>
+        <div>
+            <label for="age">Select an Age Group:</label>
+            <select name="age" id="age" required>
+                <!-- Disabled allows for the user to not accidently choose this option -->
+                <option value="" disabled selected>--Select a Group--</option>
+                <option value="under18">Under 18</option>
+                <option value="18-30">18-30</option>
+                <option value="31-40">31-40</option>
+                <option value="41-50">41-50</option>
+                <option value="above50">Above 50</option>
+            </select>
+        </div>
+        </p>
+
+        <button>Register!</button>
+    </form>
+</body>
+
+</html>
